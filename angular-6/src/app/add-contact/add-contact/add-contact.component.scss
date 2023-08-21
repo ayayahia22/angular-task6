@@ -1,0 +1,144 @@
+/* contact.component.scss */
+
+/* Style for the container */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Style for the heading */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style for the search link */
+a {
+  display: block;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Style for the form inputs */
+input {
+  width: 30%;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Style for the contact list */
+#contactList {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+#contactList h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#contactList ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contactList li {
+  margin-bottom: 5px;
+  font-style: italic;
+  border: #ccc solid 1px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(241, 138, 48);
+  width: 30%;
+  color:#100404;
+  font-size: 3ch;
+
+}
+#contactList li:hover{
+  margin-bottom: 5px;
+  font-style: italic;
+  border: #ccc solid 1px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: lightseagreen;
+  width: 30%;
+  color:#f9f9f9
+
+}
+// #contactList li > button:hover {
+
+//   font-style: italic;
+//   border: #e33030 solid 1px;
+//   padding: 5px;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   background-color: #eb6218;
+//   color:white
+
+
+// }
+
+/* Style for the search input */
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#search {
+  width: 30%;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#searchResults {
+  margin-top: 20px;
+}
+
+#searchResults ul {
+  list-style: none;
+  padding: 0;
+}
+
+#searchResults li {
+  margin-bottom: 5px;
+  font-style: italic;
+  border: #ccc solid 1px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #eb9c9c;
+  width: 30%;
+}

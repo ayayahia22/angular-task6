@@ -1,0 +1,29 @@
+<!-- contact.component.html -->
+<p>add-contact works!</p>
+<h1>add contact</h1>
+<a routerLink="/search-contact">search contact</a>
+<form #f="ngForm" (ngSubmit)="add(f)">
+  <input type="text" id="name" name="name" [(ngModel)]="f.value.name" required>
+  <br>
+  <input type="text" id="number" name="number" [(ngModel)]="f.value.number" required>
+  <br>
+  <button type="submit" id="add" [disabled]="!f.valid">add</button>
+</form>
+<div id="contactList">
+  <h2>Contact List</h2>
+  <ul>
+    <li *ngFor="let contact of contactList">
+      {{ contact.name }} - {{ contact.number }}
+      <button id="delete"(click)="delete(contact)">delete</button>
+    </li>
+  </ul>
+</div>
+<label for="seach">search</label>
+<input type="text" name="search" id="search"[(ngModel)]="searchString"(input)="onChange()" >
+<div id="searchResults">searchResults
+  <ul >
+    <li *ngFor="let contact of filteredContactList">
+      {{ contact.name }} - {{ contact.number }}
+    </li>
+  </ul>
+</div>
